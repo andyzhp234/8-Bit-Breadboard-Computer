@@ -4,6 +4,10 @@ This repository contains all the design files, instructions, and code related to
 
 ## Project Images:
 
+### High level overview
+
+<img src="./Schematics/high-level.png" alt="high_level" />
+
 ## Project Overview
 This project is a simple 8-bit computer assembled entirely on a breadboard. The computer is capable of running basic programs and demonstrates fundamental concepts of computer architecture such as memory management, instruction decoding, and the fetch-decode-execute cycle.
 
