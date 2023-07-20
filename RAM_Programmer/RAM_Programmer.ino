@@ -164,12 +164,33 @@ void helloWorld() {
   writeCode("1001", "HLT", "0000");
 }
 
+// Fibonacci Sequence
+void fibonacci_sequence() {
+  writeCode("0000", "LDI", "0001");
+  writeCode("0001", "STA", "1110");
+  writeCode("0010", "LDI", "0000");
+  writeCode("0011", "STA", "1111");
+  writeCode("0100", "OUT", "0000");
+  writeCode("0101", "LDA", "1110");
+  writeCode("0110", "ADD", "1111");
+  writeCode("0111", "STA", "1110");
+  writeCode("1000", "OUT", "0000");
+  writeCode("1001", "LDA", "1111");
+  writeCode("1010", "ADD", "1110");
+  writeCode("1011", "JC", "1101");
+  writeCode("1100", "JMP", "0011");
+  writeCode("1101", "HLT", "0000");
+  writeDirectMemoryValues("1110", "00000000"); // x
+  writeDirectMemoryValues("1111", "00000001"); // y
+}
+
 // RAM is limited
 // Can only write 16 Lines of code, including storages of temp values....
 void mainProgram() {
   // multiply(2, 10);
   // loopBackForth();
-  helloWorld();
+  // helloWorld();
+  fibonacci_sequence();
 }
 
 // Analog A0, A1, A2, A3 Will be used to represent memory Values
