@@ -1,4 +1,4 @@
-# README for 8-bit Computer
+# README
 
 This repository contains all the design files, instructions, and code related to my 8-bit Breadboard Computer. This computer was built entirely on a breadboard, following the instructional series by Ben Eater.
 
